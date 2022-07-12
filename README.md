@@ -13,16 +13,16 @@ The simplest way is to install the necessary version of Python directly:
 
 Alternatively, if you are already using Conda, you can use it to get the correct version of Python.
 - If using Conda, all the commands below should be in the "miniconda prompt" or "anaconda prompt"
-- Navigate to `chemicals-decarbonization` folder
+- Navigate to `Pathways-Chemical-Industry` folder
 - Create a Conda environment with the correct version of Python:
   ```shell
-  conda create -n chemicals-decarbonization python=3.9 conda create -n py39 python==3.9.
+  conda create -n Pathways-Chemical-Industry python=3.9
   ```
   Don't "activate" the environment now.
 
 Either way, we then need to [install virtualenv](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/), which manages all the dependencies of the code to get the correct versions installed. The simplest way is to run `pip install virtualenv`.
-- Navigate to `chemicals-decarbonization` folder
-- Then run`virtualenv chemicals-decarbonization`
+- Navigate to `Pathways-Chemical-Industry` folder
+- Then run`virtualenv Pathways-Chemical-Industry`
 
 ## Setting up and running the model
 
@@ -30,11 +30,11 @@ Either way, we then need to [install virtualenv](https://uoa-eresearch.github.io
 ### If using `Command Prompt`
 
 1. Open a terminal / git-bash
-2. Navigate to `chemicals-decarbonization` folder and activate the environment
+2. Navigate to `Pathways-Chemical-Industry` folder and activate the environment
 If using Conda
-`conda activate chemicals-decarbonization`
+`conda activate Pathways-Chemical-Industry`
 If using 
-`virtualenv chemicals-decarbonization`
+`virtualenv Pathways-Chemical-Industry`
 3. Install project requirements using `pip install -r requirements.txt`
 4. Create a `data/` directory, and add the input data sheet (`Master Template - python copy.xslx`) into it.
 5. Make a copy of the `config_template.py` file and rename it to `config.py`. Make changes only to `config.py`.
